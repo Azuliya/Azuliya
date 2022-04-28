@@ -85,7 +85,7 @@ async def nextloop(ctx: commands.Context):
     await ctx.send(content=f"Next guild war warning time {dt.strftime('%Y-%m-%d %H:%M:%S')} UTC")
     print(bot.myloop.next_iteration)
 
-load_dotenv("C:/Users/user/PycharmProjects/untitled2/dot.env")
+load_dotenv("dot")
 token = os.environ["MINT"]
 bot.load_extension("somecommands")
 
