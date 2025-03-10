@@ -7,9 +7,9 @@ from datetime import datetime, time
 from dotenv import find_dotenv
 
 TIMES = [
-    time(4),
-    time(10),
-    time(1),
+    time(x), #0
+    time(x), #1
+    time(x), #2
 ]
 
 DAY_MESSAGE_MAPS = [
@@ -17,12 +17,12 @@ DAY_MESSAGE_MAPS = [
         1: "Guild war has started!",  # index 1: 7 AM
     },
     {  # TUE
-        0: "Guild war ends in 6 hours! <@&945164154862448672>",  # index 0: 1 AM
+        0: "Guild war ends in 6 hours! #to be added#",  # index 0: 1 AM
         1: "Guild war has ended!",  # index 1: 7 AM
     },
     {  # WED
         1: "Guild war has started!",  # index 1: 7 AM
-        2: "Maintenance starts in 2 hours! Make sure to use your guild war attacks before then! <@&945164154862448672>",
+        2: "Maintenance starts in 2 hours! Make sure to use your guild war attacks before then! #to be added#",
         # Maintenance starts in 2 hours! Make sure to use your guild war attacks before then!(1)
         # Guild war ends in 9 hours!(No maintenance today) (1)
     },
@@ -33,7 +33,7 @@ DAY_MESSAGE_MAPS = [
         1: "Guild war has started!",  # index 1: 7 AM
     },
     {  # SAT
-        0: "Guild war ends in 6 hours! <@&945164154862448672>",  # index 0: 1 AM
+        0: "Guild war ends in 6 hours! #to be added#",  # index 0: 1 AM
         1: "Guild war has ended!",  # index 1: 7 AM
     },
     {}  # SUN, do nothing
@@ -67,7 +67,7 @@ class MyBot(commands.Bot):
     @myloop.before_loop
     async def before_myloop(self):
         await self.wait_until_ready()
-        channel = await self.fetch_channel(652808067347513344)
+        channel = await self.fetch_channel(#to be added#)
         if not isinstance(channel, disnake.TextChannel):
             raise ValueError("Invalid channel")
 
