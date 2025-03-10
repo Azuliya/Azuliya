@@ -4,16 +4,16 @@ from disnake.ext import commands
 
 
 class SomeCommands(commands.Cog):
-    """A couple of simple commands."""
+    """A couple of simple shitty commands."""
 
     def __init__(self, bot: commands.Bot):
         self.bot = bot
 
-    @commands.command(name="killblaze")
+    @commands.command(name="#to be added#")
     async def w1(self, ctx: commands.Context):
-        await ctx.send("Blaze has been killed")
+        await ctx.send("#to be added")
 
-    @commands.command(name="nay")
+    @commands.command(name="CLEAN")
     async def w1(self, ctx: commands.Context):
         await ctx.send("CLEAN THE ENVIRONMENT BY EXTERMINATING HUMANS!!!")
 
